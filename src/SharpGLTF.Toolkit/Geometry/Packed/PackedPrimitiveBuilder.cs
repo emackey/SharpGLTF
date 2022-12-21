@@ -206,7 +206,7 @@ namespace SharpGLTF.Geometry
                 }
             }
 
-            foreach (var vb in vertexBuffers.Values) vb.MergeBuffers();
+            //foreach (var vb in vertexBuffers.Values) vb.MergeBuffers();
         }
 
         private static void _MergeStridedVertices(IEnumerable<PackedPrimitiveBuilder<TMaterial>> primitives)
@@ -224,7 +224,7 @@ namespace SharpGLTF.Geometry
                     vertexBuffers.AddAccessors(p._VertexAccessors);
                 }
 
-                vertexBuffers.MergeBuffers();
+                //vertexBuffers.MergeBuffers();
             }
         }
 
@@ -237,7 +237,7 @@ namespace SharpGLTF.Geometry
                 indexBuffers.AddAccessors(p._IndexAccessors);
             }
 
-            indexBuffers.MergeBuffers();
+            //indexBuffers.MergeBuffers();
         }
 
         #endregion
